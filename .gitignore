@@ -1,0 +1,19 @@
+# Logs & OS
+*.log
+.DS_Store
+
+# Node / Next
+node_modules/
+.npm/
+.pnpm-store/
+.next/
+out/
+dist/
+coverage/
+.env
+.env.*
+
+# Tools / hosts
+.vercel/
+.vscode/
+.idea/
