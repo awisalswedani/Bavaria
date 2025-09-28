@@ -72,7 +72,7 @@ export default function PrivacyPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </Link>
-            <h1 className="mx-auto text-xl font-bold truncate max-w-xs text-center w-full" style={{ color: isDark ? '#fff' : '#222' }}>{language === 'ar' ? 'سياسة الخصوصية' : 'Privacy Policy'}</h1>
+            <h1 className="mx-auto text-xl font-bold truncate max-w-xs text-center w-full" style={{ color: isDark ? '#fff' : '#222' }}>{language === 'ar' ? 'سياساتنا' : 'Privacy Policy'}</h1>
           </div>
         </div>
       </header>

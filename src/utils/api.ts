@@ -6,7 +6,7 @@ const BASE_URL = 'https://awisapp.com/api/v1';
 // ⭐ CENTRALIZED SELLER CONFIGURATION ⭐
 // To use this project for a different seller, only change the SELLER_ID here
 // This single change will update all seller-related API calls throughout the project
-export const SELLER_ID = process.env.NEXT_PUBLIC_SELLER_ID || process.env.SELLER_ID || '19';
+export const SELLER_ID = process.env.NEXT_PUBLIC_SELLER_ID || process.env.SELLER_ID || '27';
 
 // Helper function to get current language
 function getCurrentLanguage(): string {

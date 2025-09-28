@@ -2,14 +2,14 @@
 // This content is bundled with the app and always available
 
 export const FALLBACK_STORE_INFO = {
-  name: "fakher",
-  nameAr: "fakher",
-  description: "We believe quality starts with selection. We offer specialty coffee roasted with care, premium cardamom, authentic saffron, and naturally sourced dates. Our vision is to create a complete experience that combines the richness of authentic Arabic flavors with a modern touch, delivering memorable moments in every sip and every product.",
-  descriptionAr: "فاخر – نكهات شرقية أصيلة تجمع القهوة والهيل والزعفران والتمور في مكان واحد",
-  phone: "+96551153196",
+  name: "Bavaria",
+  nameAr: "Bavaria",
+  description: "Bavaria - a bouquet of fine perfumes and luxurious incense with innovative aromatic touches that combine authenticity and luxury.",
+  descriptionAr: "بافاريا للعطور – باقة من العطور الراقية والبخور الفاخر بلمسات عطرية مبتكرة تجمع بين الأصالة والفخامة",
+  phone: "+96590959211",
   email: "",
-  whatsapp: "https://wa.me/96551153196",
-  instagram: "https://www.instagram.com/fakherroaster/",
+  whatsapp: "https://wa.me/96590959211",
+  instagram: "https://instagram.com/bavaria_perfumes",
   location: "Kuwait",
   locationAr: "الكويت"
 };

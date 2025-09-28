@@ -182,7 +182,7 @@ export default function MobileNavBar() {
                     <path d="M8 8h8M8 12h8M8 16h8" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-                <span className={`flex-1 text-base font-medium text-gray-900 ${direction === 'rtl' ? 'text-right' : 'text-left'}`}>{language === 'ar' ? 'سياسة الخصوصية' : i18n.t('privacy_policy')}</span>
+                <span className={`flex-1 text-base font-medium text-gray-900 ${direction === 'rtl' ? 'text-right' : 'text-left'}`}>{language === 'ar' ? 'سياساتنا' : i18n.t('privacy_policy')}</span>
                 <span className={direction === 'rtl' ? 'mr-3 flex-shrink-0 text-gray-400' : 'ml-3 flex-shrink-0 text-gray-400'}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path d={direction === 'rtl' ? 'M15 19l-7-7 7-7' : 'M9 5l7 7-7 7'} strokeLinecap="round" strokeLinejoin="round"/>

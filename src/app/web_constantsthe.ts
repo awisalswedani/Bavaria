@@ -1,10 +1,10 @@
 // Web constants for app-wide use
 export const WEB_CONSTANTS = {
-  phone: "+96551153196",
+  phone: "+96590959211",
   email: "",
-  whatsapp: "https://wa.me/96551153196",
-  instagram: "https://www.instagram.com/fakherroaster/",
-  primaryColor: "#64502e", // Header and main brand color
+  whatsapp: "https://wa.me/96590959211",
+  instagram: "https://instagram.com/bavaria_perfumes",
+  primaryColor: "#016137", // Header and main brand color
   secondaryColor: "#ff0000", // Accent color
   // Note: aboutUs and privacyPolicy are now handled through i18n translations
   // Use i18n.t('about_us_content') and i18n.t('privacy_policy_content') instead

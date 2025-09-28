@@ -3,8 +3,8 @@ import { getSellerInfo } from '@/utils/api';
 import ClientLayout from './ClientLayout';
 
 export const metadata: Metadata = {
-  title: "فاخر | Fakher",
-  description: "فاخر – نكهات شرقية أصيلة تجمع القهوة والهيل والزعفران والتمور في مكان واحد",
+  title: "بافاريا | Bavaria",
+  description: "بافاريا للعطور – باقة من العطور الراقية والبخور الفاخر بلمسات عطرية مبتكرة تجمع بين الأصالة والفخامة",
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

@@ -295,7 +295,7 @@ export default function Header({ seller }: { seller: any }) {
           </form>
           <nav className="hidden lg:flex items-center gap-x-6">
             <Link href="/about" className="text-white hover:text-gray-200 text-base font-medium transition-colors">{language === 'ar' ? 'من نحن' : i18n.t('about')}</Link>
-            <Link href="/privacy" className="text-white hover:text-gray-200 text-base font-medium transition-colors">{language === 'ar' ? 'سياسة الخصوصية' : i18n.t('privacy_policy')}</Link>
+            <Link href="/privacy" className="text-white hover:text-gray-200 text-base font-medium transition-colors">{language === 'ar' ? 'سياساتنا' : i18n.t('privacy_policy')}</Link>
           </nav>
           <button onClick={toggleLanguage} className="ml-6 text-white text-lg font-bold focus:outline-none hover:text-gray-200 transition-colors" style={{background: 'none', border: 'none', boxShadow: 'none'}}>{langChar}</button>
           <div className="ml-4">
