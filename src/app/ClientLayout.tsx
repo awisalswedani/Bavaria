@@ -1,5 +1,6 @@
 "use client";
 import type { ReactNode } from "react";
+import { Suspense } from 'react';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/components/CartContext";
@@ -23,7 +24,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function ClientLayout({ seller, children }: { seller: any, children: ReactNode }) {
+function RouteEffects() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -51,6 +52,11 @@ export default function ClientLayout({ seller, children }: { seller: any, childr
     }
   }, [pathname, searchParams]);
 
+  return null;
+}
+
+export default function ClientLayout({ seller, children }: { seller: any, children: ReactNode }) {
+
   // Periodic cache cleanup and service worker registration
   useEffect(() => {
     // Clean cache on app start
@@ -76,6 +82,9 @@ export default function ClientLayout({ seller, children }: { seller: any, childr
   return (
     <LanguageProvider>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Suspense fallback={null}>
+          <RouteEffects />
+        </Suspense>
         
         <CartProvider>
           <OfflineNotification />
