@@ -23,9 +23,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${WEB_CONSTANTS.googleAnalyticsId}`}
-              strategy="afterInteractive"
+              strategy="beforeInteractive"
             />
-            <Script id="gtag-init" strategy="afterInteractive">
+            <Script id="gtag-init" strategy="beforeInteractive">
               {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
