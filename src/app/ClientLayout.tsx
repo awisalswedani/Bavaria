@@ -11,7 +11,6 @@ import OfflineNotification from '@/components/OfflineNotification';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 import { cache } from '@/lib/cache';
-import Script from 'next/script';
 import { WEB_CONSTANTS } from './web_constantsthe';
 
 const geistSans = Geist({
@@ -77,22 +76,7 @@ export default function ClientLayout({ seller, children }: { seller: any, childr
   return (
     <LanguageProvider>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {WEB_CONSTANTS.googleAnalyticsId ? (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${WEB_CONSTANTS.googleAnalyticsId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${WEB_CONSTANTS.googleAnalyticsId}');
-              `}
-            </Script>
-          </>
-        ) : null}
+        
         <CartProvider>
           <OfflineNotification />
           <Header seller={seller} />
