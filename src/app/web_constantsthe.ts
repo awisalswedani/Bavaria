@@ -8,5 +8,5 @@ export const WEB_CONSTANTS = {
   secondaryColor: "#ff0000", // Accent color
   // Note: aboutUs and privacyPolicy are now handled through i18n translations
   // Use i18n.t('about_us_content') and i18n.t('privacy_policy_content') instead
-  googleAnalyticsId: "G-WW2T4YDN59",
+  googleAnalyticsId: "G-L4QTSK9B0S",
 }; 
